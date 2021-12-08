@@ -8,9 +8,11 @@ A view that clips an image to a circle and adds a stroke and shadow.
 import SwiftUI
 
 struct CircleImage: View {
+
+
     var body: some View {
         Image("turtlerock")
-            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            .clipShape(Circle())
             .overlay {
                 Circle().stroke(.white, lineWidth: 4)
             }
